@@ -1,8 +1,6 @@
 package com.demo.kotlin
 
-import com.demo.kotlin.lqm.DataKtClass
-import com.demo.kotlin.lqm.KtClass
-import com.demo.kotlin.lqm.SAMInterface
+import com.demo.kotlin.lqm.*
 
 fun main() {
     println("Hello, world!")
@@ -21,4 +19,12 @@ fun main() {
     }
     ktClass.broadcast()
     DataKtClass("fengxiaoling", 31).print()
+
+    val baseImpl = BaseImpl()
+    baseImpl.print()
+    baseImpl.defaultMethod()
+    println("finish the impl")
+    val derivedBase = DerivedBase(baseImpl)
+    derivedBase.print()
+    derivedBase.defaultMethod()
 }
