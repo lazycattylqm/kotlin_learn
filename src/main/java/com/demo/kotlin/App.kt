@@ -4,8 +4,10 @@ import com.demo.kotlin.lqm.KtClass
 
 fun main() {
     println("Hello, world!")
-    var ktClass = KtClass()
+    val ktClass = KtClass()
     ktClass.age = 100
     ktClass.name = "lqm"
-    ktClass.print();
+    ktClass.print()
+    val tempPractice = KtClass()
+    tempPractice.tempPractice()
 }

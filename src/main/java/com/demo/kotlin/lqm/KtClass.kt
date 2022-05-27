@@ -1,6 +1,6 @@
 package com.demo.kotlin.lqm
 
-class KtClass constructor() {
+class KtClass constructor(): TempPractice {
     var name: String? = null
         get() {
             println("getter name")
@@ -28,13 +28,17 @@ class KtClass constructor() {
         this.age = age
     }
 
-    public fun print(): Unit {
+    fun print() {
         println("name: $name, age: $age")
         privateFun()
     }
 
     private fun privateFun() {
         println("privateFun")
+    }
+
+    override fun tempPractice() {
+        println("this is implement of tempPractice, Kt class")
     }
 
 
