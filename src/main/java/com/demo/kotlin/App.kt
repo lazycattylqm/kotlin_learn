@@ -14,6 +14,8 @@ fun main() {
     val sam = SAMInterface { it > 12 }
     println(sam.test(100))
     println(sam.test(1))
-
-
+    fun KtClass.broadcast() {
+        this.print()
+    }
+    ktClass.broadcast()
 }
