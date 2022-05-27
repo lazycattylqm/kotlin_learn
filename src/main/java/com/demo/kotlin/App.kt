@@ -27,4 +27,10 @@ fun main() {
     val derivedBase = DerivedBase(baseImpl)
     derivedBase.print()
     derivedBase.defaultMethod()
+
+    println("start of delegate of property")
+
+    val demo = Demo("demo")
+    demo.name = "demo12"
+    println(demo.name)
 }
