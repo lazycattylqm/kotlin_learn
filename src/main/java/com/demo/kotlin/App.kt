@@ -33,4 +33,12 @@ fun main() {
     val demo = Demo("demo")
     demo.name = "demo12"
     println(demo.name)
+
+    println("start of lazy")
+    val lazyStr:String by lazy {
+        println("lazyStr is called")
+        "lazyStr"
+    }
+    println(lazyStr)
+    println(lazyStr)
 }
