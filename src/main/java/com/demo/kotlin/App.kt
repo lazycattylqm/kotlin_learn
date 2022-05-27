@@ -15,6 +15,7 @@ fun main() {
     println(sam.test(100))
     println(sam.test(1))
     fun KtClass.broadcast() {
+        println("this is broadcast")
         this.print()
     }
     ktClass.broadcast()
