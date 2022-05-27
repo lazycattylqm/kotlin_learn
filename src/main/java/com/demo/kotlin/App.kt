@@ -1,5 +1,6 @@
 package com.demo.kotlin
 
+import com.demo.kotlin.lqm.DataKtClass
 import com.demo.kotlin.lqm.KtClass
 import com.demo.kotlin.lqm.SAMInterface
 
@@ -19,4 +20,5 @@ fun main() {
         this.print()
     }
     ktClass.broadcast()
+    DataKtClass("fengxiaoling", 31).print()
 }
