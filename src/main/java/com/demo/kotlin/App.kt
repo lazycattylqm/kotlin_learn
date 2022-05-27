@@ -41,4 +41,7 @@ fun main() {
     }
     println(lazyStr)
     println(lazyStr)
+
+    println("start of observable")
+    demo.age = 10
 }
